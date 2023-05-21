@@ -4,12 +4,14 @@ const connect = require('./Connections/connect.js')
 const morgan = require('morgan')
 const fs = require('fs')
 const path = require('path')
+const orderRouter = require('./Routes/orderRoutes.js')
 
 
 
 const app = express()
+app.use(express.json())
 
-
+app.use('/',orderRouter)
  // create a write stream (in append mode)
 var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
  
