@@ -1,0 +1,38 @@
+.footer-container{
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.about-us-class,.home-footer-class,.pricing,.career-class,.contact-class,.social-media-class{
+    margin-top: 10px;
+    margin-left: 150px;
+}
+.about-us-class,.home-footer-class,.pricing,.career-class,.contact-class,.social-media-class >p{
+    font-size: 13px;
+}
+.copy-rights{
+    width: 100%;
+    height: 35px;
+    background-color: #182838;
+}
+.copy-rights > p{
+    color: white;
+    text-align: center;
+}
+.fi-icons{
+    margin-left: 10px;
+}
+.Referal-div{
+    width: 100%;
+    background-color: #F8F9FF;
+    text-align: center;
+}
+.refer-para{
+    padding-top: 12px;
+    font-size: 20px;
+    color: #5861AE;
+}
+.Referal-div >p{
+    color: #5861AE;
+}

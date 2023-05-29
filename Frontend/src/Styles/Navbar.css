@@ -1,0 +1,45 @@
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5vw !important;
+    box-shadow: 0 2px 10px #c5c5c5;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin: 0 !important;
+}
+
+.links li {
+    padding: 22px 25px;
+    list-style: none;
+    border-left: 0.5px solid #E3E3E3;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.logo li {
+    list-style: none;
+    text-align: left;
+    color: #5861AE;
+    font-weight: bolder;
+}
+
+
+.links li a {
+    color: #808080;
+}
+
+.drop-style{
+    border: 0 !important;
+}
