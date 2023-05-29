@@ -19,11 +19,11 @@ router.post('/signup', async (req, res) => {
         const existingEmail = await User.find({ email: req.body.email })
         const existingPhone = await User.find({ phone: req.body.phone })
 
-        if (existingEmail.lenght) {
+        if (existingEmail.length) {
             return res.status(409).json(`User with this ${req.body.email}already exists`)
         }
 
-        if (existingPhone.lenght) {
+        if (existingPhone.length) {
             return res.status(409).json(`User with this ${req.body.email}already exists`)
         }
 
