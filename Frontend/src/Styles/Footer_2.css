@@ -1,0 +1,15 @@
+.Footer_2{
+    background-color: #182838;
+    height: 50px;
+    margin: 0 auto;
+    width: 100vw;
+    border: solid 1px #707070;
+}
+.Footer_2 section{
+    text-align: center;
+    font: normal normal normal 16px/24px Avenir;
+    letter-spacing: 0.12px;
+    color: #FFFFFF;
+    padding: 10px;
+
+}

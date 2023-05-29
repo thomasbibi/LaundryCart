@@ -1,0 +1,28 @@
+.confirm-modal {
+    position: relative;
+    z-index: 5;
+}
+
+.confirm-modal-body {
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirm-modal p {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.confirm-modal button {
+    margin: 20px;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #5861AE;
+}
