@@ -9,11 +9,11 @@ const orderSchema = new mongoose.Schema({
         type : Array,
         default : []
     },
-    dateTime : {
+    date_time : {
         type : String,
         required : true
     },
-    totalItems : {
+    total_items : {
         type : String,
         required : true
     },

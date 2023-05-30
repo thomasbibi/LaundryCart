@@ -13,6 +13,9 @@
     align-items: center;
 }
 
+#tick{
+    height: 25px;
+}
 .confirm-modal p {
     text-align: center;
     font-weight: bolder;

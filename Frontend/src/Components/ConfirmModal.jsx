@@ -1,6 +1,9 @@
 import Modal from 'react-bootstrap/Modal';
 import { useNavigate } from 'react-router-dom';
 import "../Styles/Confirm.css"
+import Tick from "../Assets/Tick.png"
+
+
 export default function ConfirmModal(props) {
     const navigate = useNavigate()
     const handleClose = () => {
@@ -17,7 +20,7 @@ export default function ConfirmModal(props) {
                 <div className='confirm-modal'>
                     <div className='confirm-modal-body'>
                         <div style={{ borderRadius: "50%", backgroundColor: "#5861AE60", padding: "10px" }}>
-                            <img src={require("../Assets/Tick.png")} alt="" />
+                            <img src={Tick} alt="tick" id='tick'/>
                         </div>
                         <p>Your Order is Successful</p>
                         <small>You can track the delivery in the "Orders" section.</small>
