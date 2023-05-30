@@ -5,7 +5,7 @@ function Footer2() {
   return (
     <div className='Footer_2'>
         <section>
-        2023 © Laundry
+        2022 © Laundry
         </section>
     </div>
   )

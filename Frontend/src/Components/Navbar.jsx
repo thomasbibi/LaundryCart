@@ -39,11 +39,11 @@ export default function Navbar() {
                 </>
                     :
                     <li style={{ backgroundColor: "#5861AE" }}>
-                        <div class="dropdown drop-style">
+                        <div className="dropdown drop-style">
                             <button className="btn btn-secondary dropdown-toggle" style={{ backgroundColor: "#5861AE", border: "0" }} data-bs-toggle="dropdown" aria-expanded="false">
                                 {user?.name}
                             </button>
-                            <div class="dropdown-menu">
+                            <div className="dropdown-menu">
                                 <li className='fs-5'>
                                     <button className="dropdown-item"
                                         style={{ margin: "0 auto", textAlign: "center", backgroundColor: "red", borderRadius: "10px", color: "white" }}

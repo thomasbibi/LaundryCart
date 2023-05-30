@@ -7,6 +7,8 @@ import ToastContext from "../Context/ToastContext";
 import Tracking from '../Components/Tracking'
 import CancelModal from '../Components/CancelModal'
 import AuthContext from '../Context/AuthContext'
+import search from "../Assets/search.png"
+import view from "../Assets/view.png"
 function Home() {
 
   const { user } = useContext(AuthContext)
@@ -97,7 +99,7 @@ function Home() {
             <button id='button-create' onClick={() => { navigate("/createOrder") }}>Create</button>
           </div>
           <div>
-            <img src={require("../Assets/search.png")} alt="search" />
+            <img src={search} alt="search" />
             <input type="number" title="Enter the number after ORDID000"
              placeholder='ORDID000' onChange={(e) => { handleSearch(e.target.value) }} className='search' />
           </div>
@@ -175,7 +177,7 @@ function Home() {
                     </button>
                   </div> : <></>}
                   <div style={{ left: "88.5vw" }}>
-                    <img onClick={() => { handleModal(idx) }} style={{ width: "20px" }} src={require("../Assets/view.png")} alt="view" data-bs-toggle="modal" data-bs-target="#SummaryModal" />
+                    <img onClick={() => { handleModal(idx) }} style={{ width: "20px" }} src={view} alt="view" data-bs-toggle="modal" data-bs-target="#SummaryModal" />
                   </div>
                 </div>
               )
@@ -217,7 +219,7 @@ function Home() {
                   </div> : <></>}
                   <div style={{ left: "88.5vw" }}>
                     <img onClick={() => { handleModal(key) }}
-                      style={{ width: "20px" }} src={require("../Assets/view.png")}
+                      style={{ width: "20px" }} src={view}
                       alt="view" data-bs-toggle="modal" data-bs-target="#SummaryModal" />
                   </div>
                 </div>

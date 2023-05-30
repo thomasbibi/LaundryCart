@@ -10,7 +10,7 @@
 #button-create {
     position: relative;
     top: 5px;
-    left: 430px;
+    left: 350px;
     width: 100px;
     border-radius: 5px;
     border: 2px solid #5861AE;
@@ -24,7 +24,7 @@ h6 {
 
 #header {
     display: flex;
-    width: 95%;
+    width: 90%;
     justify-content: space-between;
     padding: 2vh;
     align-self: flex-start;

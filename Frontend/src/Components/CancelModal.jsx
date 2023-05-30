@@ -1,4 +1,5 @@
 import Modal from 'react-bootstrap/Modal';
+import Alert from "../Assets/Alert.png";
 
 export default function CancelModal(props) {
     // { console.log(props.cancelid) }
@@ -17,7 +18,7 @@ export default function CancelModal(props) {
             <Modal.Body style={{ borderRadius: "0", display: "flex", flexDirection: "column" }}>
                 <div style={{ display: "flex", padding: "30px 50px" }}>
                     <div style={{ marginRight: "-50px" }}>
-                        <img src={require("../Assets/alert.png")} alt="alert" style={{}} />
+                        <img src={Alert} alt="alert" style={{height : "45px"}} />
                     </div>
                     <div style={{ textAlign: "center", width: "250px", marginLeft: "50px" }}>
                         Are You Sure You Want To Cancel Order <span   style={{ color: '#5861AE', fontWeight: "bold" }}>No : ORID000{props.cancelid && props.cancelid[1]}</span>

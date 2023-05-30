@@ -7,6 +7,22 @@ import ConfirmModal from '../Components/ConfirmModal'
 import axios from 'axios'
 import Tracking from '../Components/Tracking'
 import { useNavigate } from 'react-router-dom'
+import search from "../Assets/search.png"
+import shirts from "../Assets/shirts.png"
+import washing1 from "../Assets/washing-machine-1.png"
+import washing from "../Assets/washing-machine.png"
+import ironing from "../Assets/ironing-1.png"
+import ironing1 from "../Assets/ironing.png"
+import towel1 from "../Assets/towel1.svg"
+import towel from "../Assets/towel.png"
+import bleach from "../Assets/bleach-1.png"
+import bleach1 from "../Assets/bleach.png"
+import Tshirts from "../Assets/T-shirts.png"
+import Trousers from "../Assets/Trousers.png"
+import Jeans from "../Assets/Jeans.png"
+import Boxer from "../Assets/Boxer.png"
+import pants from "../Assets/pants.png"
+import others from "../Assets/others.png"
 
 function CreateOrder() {
 
@@ -324,7 +340,7 @@ function CreateOrder() {
             Create Order
           </div>
           <div>
-            <img src={require("../Assets/search.png")} alt="search" />
+            <img src={search} alt="search" />
             <input type="text" className='fs-5 search' />
           </div>
         </header>
@@ -339,24 +355,24 @@ function CreateOrder() {
           </thead>
           <tbody>
             <tr>
-              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/cloth.png")} alt="washing" />Shirts</td>
+              <td><img style={{ height: '50px', marginRight: "15px" }} src={shirts} alt="washing" />Shirts</td>
               <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 0) }}
                 value={orderDetails[0].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
 
                 <div onClick={() => { toggleServices(0, 0) }}><img src={orderDetails[0].wash ?
-                  require("../Assets/washing-machineSelected.png") :
-                  require("../Assets/washing-machine.png")} alt="washing" /></div>
+                  washing1 :
+                  washing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(0, 1) }}><img src={orderDetails[0].press ?
-                  require("../Assets/ironingSelected.png") :
-                  require("../Assets/ironing.png")} alt="washing" /></div>
+                  ironing1 :
+                  ironing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(0, 2) }}><img src={orderDetails[0].fold ?
-                  require("../Assets/foldSelected.png") : require("../Assets/fold.png")} alt="Towel" /></div>
+                  towel1 : towel} alt="Towel" /></div>
 
                 <div onClick={() => { toggleServices(0, 3) }}><img src={orderDetails[0].pack ?
-                  require("../Assets/bleachSelected.png") : require("../Assets/bleach.png")} alt="Bleach" /></div>
+                  bleach1: bleach} alt="Bleach" /></div>
 
               </td>
               <td>{orderDetails[0].total > 0 ? <>
@@ -380,23 +396,23 @@ function CreateOrder() {
 
 
             <tr>
-              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/tshirt.png")} alt="washing" />T Shirts</td>
+              <td><img style={{ height: '50px', marginRight: "15px" }} src={Tshirts} alt="washing" />T Shirts</td>
               <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 1) }} value={orderDetails[1].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
 
                 <div onClick={() => { toggleServices(1, 0) }}><img src={orderDetails[1].wash ?
-                  require("../Assets/washing-machineSelected.png") :
-                  require("../Assets/washing-machine.png")} alt="washing" /></div>
+                  washing1 :
+                  washing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(1, 1) }}><img src={orderDetails[1].press ?
-                  require("../Assets/ironingSelected.png") :
-                  require("../Assets/ironing.png")} alt="washing" /></div>
+                  ironing1 :
+                  ironing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(1, 2) }}><img src={orderDetails[1].fold ?
-                  require("../Assets/foldSelected.png") : require("../Assets/fold.png")} alt="Towel" /></div>
+                  towel1 : towel} alt="Towel" /></div>
 
                 <div onClick={() => { toggleServices(1, 3) }}><img src={orderDetails[1].pack ?
-                  require("../Assets/bleachSelected.png") : require("../Assets/bleach.png")} alt="Bleach" /></div>
+                  bleach1 : bleach} alt="Bleach" /></div>
 
               </td>
               <td>{orderDetails[1].total > 0 ? <>
@@ -420,23 +436,23 @@ function CreateOrder() {
 
 
             <tr>
-              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/trousers.png")} alt="washing" />Trousers</td>
+              <td><img style={{ height: '50px', marginRight: "15px" }} src={Trousers} alt="washing" />Trousers</td>
               <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 2) }} value={orderDetails[2].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
 
                 <div onClick={() => { toggleServices(2, 0) }}><img src={orderDetails[2].wash ?
-                  require("../Assets/washing-machineSelected.png") :
-                  require("../Assets/washing-machine.png")} alt="washing" /></div>
+                  washing1 :
+                  washing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(2, 1) }}><img src={orderDetails[2].press ?
-                  require("../Assets/ironingSelected.png") :
-                  require("../Assets/ironing.png")} alt="washing" /></div>
+                  ironing1 :
+                  ironing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(2, 2) }}><img src={orderDetails[2].fold ?
-                  require("../Assets/foldSelected.png") : require("../Assets/fold.png")} alt="Towel" /></div>
+                 towel1 : towel} alt="Towel" /></div>
 
                 <div onClick={() => { toggleServices(2, 3) }}><img src={orderDetails[2].pack ?
-                  require("../Assets/bleachSelected.png") : require("../Assets/bleach.png")} alt="Bleach" /></div>
+                  bleach1 : bleach} alt="Bleach" /></div>
 
               </td>
               <td>{orderDetails[2].total > 0 ? <>
@@ -460,22 +476,22 @@ function CreateOrder() {
 
 
             <tr>
-              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/jeans.png")} alt="washing" />Jeans</td>
+              <td><img style={{ height: '50px', marginRight: "15px" }} src={Jeans} alt="washing" />Jeans</td>
               <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 3) }} value={orderDetails[3].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
                 <div onClick={() => { toggleServices(3, 0) }}><img src={orderDetails[3].wash ?
-                  require("../Assets/washing-machineSelected.png") :
-                  require("../Assets/washing-machine.png")} alt="washing" /></div>
+                  washing1 :
+                  washing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(3, 1) }}><img src={orderDetails[3].press ?
-                  require("../Assets/ironingSelected.png") :
-                  require("../Assets/ironing.png")} alt="washing" /></div>
+                  ironing1 :
+                  ironing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(3, 2) }}><img src={orderDetails[3].fold ?
-                  require("../Assets/foldSelected.png") : require("../Assets/fold.png")} alt="Towel" /></div>
+                 towel1 : towel} alt="Towel" /></div>
 
                 <div onClick={() => { toggleServices(3, 3) }}><img src={orderDetails[3].pack ?
-                  require("../Assets/bleachSelected.png") : require("../Assets/bleach.png")} alt="Bleach" /></div>
+                  bleach1 : bleach} alt="Bleach" /></div>
               </td>
               <td>{orderDetails[3].total > 0 ? <>
 
@@ -498,22 +514,22 @@ function CreateOrder() {
 
 
             <tr>
-              <td> <img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/boxers.png")} alt="washing" />Boxers</td>
+              <td> <img style={{ height: '50px', marginRight: "15px" }} src={Boxer} alt="washing" />Boxers</td>
               <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 4) }} value={orderDetails[4].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
                 <div onClick={() => { toggleServices(4, 0) }}><img src={orderDetails[4].wash ?
-                  require("../Assets/washing-machineSelected.png") :
-                  require("../Assets/washing-machine.png")} alt="washing" /></div>
+                  washing1 :
+                  washing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(4, 1) }}><img src={orderDetails[4].press ?
-                  require("../Assets/ironingSelected.png") :
-                  require("../Assets/ironing.png")} alt="washing" /></div>
+                  ironing1 :
+                  ironing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(4, 2) }}><img src={orderDetails[4].fold ?
-                  require("../Assets/foldSelected.png") : require("../Assets/fold.png")} alt="Towel" /></div>
+                 towel1 : towel} alt="Towel" /></div>
 
                 <div onClick={() => { toggleServices(4, 3) }}><img src={orderDetails[4].pack ?
-                  require("../Assets/bleachSelected.png") : require("../Assets/bleach.png")} alt="Bleach" /></div>
+                  bleach1 : bleach} alt="Bleach" /></div>
               </td>
               <td>{orderDetails[4].total > 0 ? <>
 
@@ -536,22 +552,22 @@ function CreateOrder() {
 
 
             <tr>
-              <td> <img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/pants.png")} alt="washing" />Joggers</td>
+              <td> <img style={{ height: '50px', marginRight: "15px" }} src={pants} alt="washing" />Joggers</td>
               <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 5) }} value={orderDetails[5].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
                 <div onClick={() => { toggleServices(5, 0) }}><img src={orderDetails[5].wash ?
-                  require("../Assets/washing-machineSelected.png") :
-                  require("../Assets/washing-machine.png")} alt="washing" /></div>
+                  washing1 :
+                  washing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(5, 1) }}><img src={orderDetails[5].press ?
-                  require("../Assets/ironingSelected.png") :
-                  require("../Assets/ironing.png")} alt="washing" /></div>
+                  ironing1 :
+                  ironing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(5, 2) }}><img src={orderDetails[5].fold ?
-                  require("../Assets/foldSelected.png") : require("../Assets/fold.png")} alt="Towel" /></div>
+                 towel1 : towel} alt="Towel" /></div>
 
                 <div onClick={() => { toggleServices(5, 3) }}><img src={orderDetails[5].pack ?
-                  require("../Assets/bleachSelected.png") : require("../Assets/bleach.png")} alt="Bleach" /></div>
+                  bleach1 : bleach} alt="Bleach" /></div>
               </td>
               <td>{orderDetails[5].total > 0 ? <>
 
@@ -572,22 +588,22 @@ function CreateOrder() {
               <div id='reset-btn'><button onClick={() => { handleReset(5) }}>Reset</button></div>
             </tr>
             <tr>
-              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/others.png")} alt="washing" />Others</td>
+              <td><img style={{ height: '50px', marginRight: "15px" }} src={others} alt="washing" />Others</td>
               <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 6) }} value={orderDetails[6].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
                 <div onClick={() => { toggleServices(6, 0) }}><img src={orderDetails[6].wash ?
-                  require("../Assets/washing-machineSelected.png") :
-                  require("../Assets/washing-machine.png")} alt="washing" /></div>
+                  washing1 :
+                  washing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(6, 1) }}><img src={orderDetails[6].press ?
-                  require("../Assets/ironingSelected.png") :
-                  require("../Assets/ironing.png")} alt="washing" /></div>
+                  ironing1 :
+                  ironing} alt="washing" /></div>
 
                 <div onClick={() => { toggleServices(6, 2) }}><img src={orderDetails[6].fold ?
-                  require("../Assets/foldSelected.png") : require("../Assets/fold.png")} alt="Towel" /></div>
+                 towel1 : towel} alt="Towel" /></div>
 
                 <div onClick={() => { toggleServices(6, 3) }}><img src={orderDetails[6].pack ?
-                  require("../Assets/bleachSelected.png") : require("../Assets/bleach.png")} alt="Bleach" /></div>
+                  bleach1 : bleach} alt="Bleach" /></div>
               </td>
               <td>{orderDetails[6].total > 0 ? <>
 

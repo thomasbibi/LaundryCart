@@ -4,14 +4,17 @@ const Order = require('../Models/ordersModel')
 const jwtAuth = require('../Middlewares/auth.js')
 
 router.post('/create',jwtAuth,async (req,res)=>{
+    console.log(req.body)
     try{
-        const {store , dateTime,status,totalItems,city,phone} = req.body[0]
+       
+        const {store , date_time,status,total_items,city,phone} = req.body[0]
         let {price} = req.body[0]
         price = Number(price)
         price += 100
         const newOrder = await Order({
             user : res.user.id,
-            dateTime ,totalItems, store,price, city,status, phone,orderDetails : req.body[1]
+            date_time ,total_items, store,price, city,status, phone,
+            orderDetails : req.body[1]
         })
         await newOrder.save()
     }
